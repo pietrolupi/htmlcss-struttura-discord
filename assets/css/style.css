@@ -5,3 +5,50 @@
 }
 
 
+/* DEBUG  */
+* {
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    font-size: large;
+}
+  header {
+    background-color:aquamarine;
+    height: 85px;
+    padding: 0 18%;
+  }
+
+  header>div{
+    height: 50px;
+    background-color: goldenrod;
+    border: 2px dashed black;
+    width: 200px;
+    flex-flow: row;
+    line-height: 50px;
+    
+  }
+  header>nav {
+    height: 50px;
+    background-color: goldenrod;
+    border: 2px dashed black;
+    width: 200px;
+    flex-flow: row;
+    line-height: 50px;
+   
+  }
+
+/* DEBUG */
+
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header>nav {
+    flex: 4.5 0px;
+  }
+
+  section:first-child { 
+    background-color: blue;
+  }
