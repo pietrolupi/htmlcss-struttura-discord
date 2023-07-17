@@ -34,7 +34,18 @@
     width: 200px;
     flex-flow: row;
     line-height: 50px;
-   
+  }
+
+  section:first-child {
+    background-color: darkblue;
+    height: 520px;
+  }
+
+  .box-1 {
+    background-color: darkorchid;
+    border: 2px dashed black;
+    height: 420px;
+    line-height: 420px;
   }
 
 /* DEBUG */
@@ -50,5 +61,11 @@
   }
 
   section:first-child { 
-    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .box-1 {
+    width: 50%;
   }
