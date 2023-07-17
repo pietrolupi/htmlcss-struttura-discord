@@ -58,25 +58,12 @@
     background-color: lightgray;
   }
 
-
-  .box-4,
-  .box-5,
-  .box-6,
-  .box-7 {
-    height: 525px;
-    line-height: 525px;
-  }
-
-  .box-2,
-  .box-5,
-  .box-6 {
+  .big-box {
     background-color: cornflowerblue;
     border: 2px dashed black;
   }
 
-  .box-3,
-  .box-4,
-  .box-7 {
+  .small-box {
     background-color: pink;
     border: 2px dashed black;
   }
@@ -104,17 +91,15 @@
     
   }
 
-  .footer-product,
-  .footer-company,
-  .footer-resources,
-  .footer-norms {
+  
+  .footer-menu {
     background-color: aqua;
     border: 2px dashed white;
     height: 600px;
    
   }
 
-  .container-footer2 {
+  .container-footer-bot {
     background-color: aquamarine;
     height: 70px;
   }
@@ -134,7 +119,15 @@
     justify-content: center;
     align-items: center;
   }
- 
+
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  main {
+    padding-top: 85px;  /* !!!!!!!!! SOSTITUISCI CON ALTEZZA FINALE HEADER */
+  }
   .container-header {
     width: 70%;
     display: flex;
@@ -144,10 +137,30 @@
   }
 
 /* MAIN */
+    /* main general */
+
+    .general-container {
+      display: flex;
+      width: 70%;
+      height: 630px;
+      margin: 0 auto;
+      padding: 50px 0;
+      line-height: 630px;
+      height: 100%;
+    }
+
+    
+    .big-box {
+      width: 60%;
+    }
+  
+    .small-box {
+      width: 40%;
+    }
 
     /* section1 */
 
-  .container-section1 { 
+  .small-container { 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -155,67 +168,14 @@
     margin: 0 auto;
     height: 100%;
   }
-
-
-    /* section2 */
-
-  .container-section2 {
-    display: flex;
-    width: 70%;
-    height: 630px;
-    margin: 0 auto;
-    padding: 50px 0;
-    line-height: 630px;
-  }
-
-  .box-2 {
-    width:60% ;
-  }
-  .box-3 {
-    width: 40%;
-  }
-
-    /* section3 */
-
-  .container-section3 {
-    display: flex;
-    width: 70%;
-    height: 630px;
-    margin: 0 auto;
-    padding: 50px 0;
-    line-height: 630px;
-  }
   
-  .box-4 {
-    width: 40%;
-  }
-  .box-5 {
-    width: 60%;
-  }
-    /* section4 */
 
-  .container-section4 {
-      display: flex;
-      width: 70%;
-      height: 630px;
-      margin: 0 auto;
-      padding: 50px 0;
-      line-height: 630px;
-    }
-    
-  .box-6 {
-      width: 60%;
-    }
-
-  .box-7 {
-      width: 40%;
-    }
 
 
     /* section5 */
 
  
-  .container-section5 { 
+  .big-container { 
       display: flex;
       justify-content: center;
       align-items: center;
@@ -226,7 +186,7 @@
     
     /* footer */
 
-  .container-footer1 { 
+  .container-footer-top { 
       display: flex;
       justify-content: center;
       align-items: center;
@@ -240,17 +200,14 @@
   .footer-social-links{
     width: 30%;
   }
-  .footer-product,
-  .footer-company,
-  .footer-resources,
-  .footer-norms {
+  .footer-menu {
     width: calc(70% / 4)
   }
 
   footer>hr{
     color: antiquewhite;
   }
-  .container-footer2 { 
+  .container-footer-bot { 
     display: flex;
     align-items: center;
     width: 70%;
